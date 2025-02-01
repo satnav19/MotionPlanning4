@@ -140,7 +140,7 @@ class Experiment:
         # Meeting point in world coordinates - halfway between robots and at a safe height
         meeting_point = (left_base + right_base) / 2.0
         #TODO pick hight, maybe default hight ?
-        meeting_point[2] = 0.3  # Set Z height for exchange
+        meeting_point[2] = (left_base[2]+right_base[2])/2  # Set Z height for exchange
         
         offset = 0.1  # Safety offset for Y direction
         
